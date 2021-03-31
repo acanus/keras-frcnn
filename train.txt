@@ -1,0 +1,21 @@
+image_name	xmin	ymin	xmax	ymax	class_id			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	214	167	238	193	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	285	175	304	206	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	330	179	346	209	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	351	182	367	210	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	375	185	395	214	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	214	194	234	220	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	255	202	274	230	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	302	210	319	235	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	328	211	344	239	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	373	215	389	241	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	393	217	412	244	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	430	220	450	245	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	450	219	471	245	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	345	212	364	240	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	303	176	324	206	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	257	171	277	200	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	237	168	255	197	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	235	199	254	223	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	282	205	303	232	1			
+D:\GitHub\keras-frcnn\Image - 143249910.bmp	396	187	411	215	1			

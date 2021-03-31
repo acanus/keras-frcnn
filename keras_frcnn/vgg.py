@@ -9,18 +9,18 @@ from __future__ import division
 
 import warnings
 
-from keras.models import Model
-from keras.layers import Flatten, Dense, Input, Conv2D, MaxPooling2D, Dropout
-from keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D, TimeDistributed
-from keras.engine.topology import get_source_inputs
-from keras.utils import layer_utils
-from keras.utils.data_utils import get_file
-from keras import backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Flatten, Dense, Input, Conv2D, MaxPooling2D, Dropout
+from tensorflow.keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D, TimeDistributed
+from tensorflow.keras.engine.topology import get_source_inputs
+from tensorflow.keras.utils import layer_utils
+from tensorflow.keras.utils.data_utils import get_file
+from tensorflow.keras import backend as K
 from keras_frcnn.RoiPoolingConv import RoiPoolingConv
 
 
 def get_weight_path():
-    if K.common.image_dim_ordering() == 'th':
+    if K.image_data_format() == 'channels_first':
         print('pretrained weights not available for VGG with theano backend')
         return
     else:
@@ -37,7 +37,7 @@ def nn_base(input_tensor=None, trainable=False):
 
 
     # Determine proper input shape
-    if K.common.image_dim_ordering() == 'th':
+    if K.image_data_format() == 'channels_first':
         input_shape = (3, None, None)
     else:
         input_shape = (None, None, 3)
@@ -50,7 +50,7 @@ def nn_base(input_tensor=None, trainable=False):
         else:
             img_input = input_tensor
 
-    if K.common.image_dim_ordering() == 'tf':
+    if K.image_data_format() == 'channels_last':
         bn_axis = 3
     else:
         bn_axis = 1
